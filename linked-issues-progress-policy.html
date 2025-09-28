@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Privacy Policy — Linked Issues Progress (Jira Cloud)</title>
-  <meta name="description" content="Privacy policy for the Linked Issues Progress Forge app for Jira Cloud." />
+  <meta name="description" content="Privacy policy for the Linked Issues Progress Application for Jira Cloud." />
   <meta name="robots" content="index,follow" />
   <style>
     :root {
@@ -76,7 +76,7 @@
 
     <section id="overview">
       <h2>Overview</h2>
-      <p><em>Linked Issues Progress</em> is a Jira Cloud app built on Atlassian Forge. It shows a readiness snapshot on an issue by rolling up the statuses of its linked and child items and rendering a simple progress bar and milestone tracker. This page explains what the app processes and how we protect your data.</p>
+      <p><em>Linked Issues Progress</em> is a Jira Cloud app built on Atlassian. It shows a readiness snapshot on an issue by rolling up the statuses of its linked and child items and rendering a simple progress bar and milestone tracker. This page explains what the app processes and how we protect your data.</p>
     </section>
 
     <section id="data-we-process">
@@ -84,8 +84,8 @@
       <ul>
         <li><strong>Within Jira (customer content &amp; metadata, read-only):</strong>
           current issue key; linked issue keys; minimal fields needed to compute progress (e.g., <code>status</code> and <code>statusCategory</code> of linked issues); link type/direction metadata and project/issuetype identifiers required to render UI. We display aggregated counts and percentages in the panel.</li>
-        <li><strong>Configuration data (stored in Forge):</strong>
-          your admin selections for which link types/directions to include in roll-ups and other simple UI preferences. Stored via Forge <code>storage:app</code> and scoped to your site/installation.</li>
+        <li><strong>Configuration data (stored in Atlassian):</strong>
+          your admin selections for which link types/directions to include in roll-ups and other simple UI preferences.</li>
         <li><strong>Operational/diagnostic data:</strong>
           invocation and error logs provided by Atlassian’s platform (visible to the app owner in Atlassian’s developer console). We do not export these logs outside Atlassian systems.</li>
       </ul>
@@ -97,7 +97,7 @@
         <li>No separate user accounts or profiles.</li>
         <li>No transfer of Jira customer content to non-Atlassian services.</li>
         <li>No third-party analytics or advertising in the app UI.</li>
-        <li>No app-managed database for customer content; we do not persist issue data outside Atlassian Forge.</li>
+        <li>No app-managed database for customer content; we do not persist issue data outside Atlassian.</li>
       </ul>
       <p class="small">If outbound integrations are added in the future, we will update this policy and the app’s permissions/CSP to list the exact domains.</p>
     </section>
@@ -111,33 +111,25 @@
       </ul>
     </section>
 
-    <section id="roles-legal-basis">
-      <h2>Roles &amp; legal basis</h2>
-      <ul>
-        <li><strong>Controller vs processor:</strong> For Jira customer content, we act as a <strong>processor</strong> to your organization (the Jira customer). For direct communications you send us (e.g., support email), we act as a <strong>controller</strong>.</li>
-        <li><strong>Legal basis (EU/UK GDPR):</strong> performance of contract and/or legitimate interests to provide and support the app.</li>
-      </ul>
-    </section>
-
     <section id="storage-retention">
       <h2>Storage &amp; retention</h2>
       <ul>
         <li><strong>Customer content:</strong> not stored by us outside Atlassian. The app reads Jira data on demand and renders results; aggregated values are not persisted.</li>
-        <li><strong>Configuration:</strong> stored in Forge <code>storage:app</code> for as long as the app is installed or until an admin resets settings.</li>
+        <li><strong>Configuration:</strong> stored in Atlassian <code>storage:app</code> for as long as the app is installed or until an admin resets settings.</li>
         <li><strong>Operational logs:</strong> retained within Atlassian’s platform per Atlassian defaults. We do not export these logs.</li>
       </ul>
     </section>
 
     <section id="subprocessors-location">
       <h2>Sub-processors &amp; data location</h2>
-      <p>The app runs entirely on Atlassian Forge. We do not use additional sub-processors for customer content. Data is processed within Atlassian’s infrastructure and regions applicable to your Jira Cloud tenancy and data residency settings. If this changes, we will list sub-processors here and update this policy.</p>
+      <p>The app runs entirely on Atlassian Atlassian. We do not use additional sub-processors for customer content. Data is processed within Atlassian’s infrastructure and regions applicable to your Jira Cloud tenancy and data residency settings. If this changes, we will list sub-processors here and update this policy.</p>
     </section>
 
     <section id="security">
       <h2>Security</h2>
       <ul>
-        <li>We request only minimal scopes (e.g., <code>read:jira-work</code>, <code>storage:app</code>).</li>
-        <li>Access is authorized by Atlassian OAuth and enforced by Forge runtime isolation and Content Security Policy (CSP).</li>
+        <li>We request only minimal scopes (e.g., <code>read:jira-work</code>, <code>storage:app</code>). Storage is used to persist basic app settings</li>
+        <li>Access is authorized by Atlassian OAuth and enforced by Atlassian runtime isolation and Content Security Policy (CSP).</li>
         <li>Any future outbound connections will be explicitly declared in egress permissions and CSP allow-lists.</li>
       </ul>
     </section>
